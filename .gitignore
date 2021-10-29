@@ -4097,3 +4097,11 @@ node_modules/yargs-parser/build/lib/string-utils.js
 node_modules/yargs-parser/build/lib/tokenize-arg-string.js
 node_modules/yargs-parser/build/lib/yargs-parser-types.js
 node_modules/yargs-parser/build/lib/yargs-parser.js
+README-template.md
+README.md
+style-guide.md
+design/active-states.jpg
+design/desktop-design.jpg
+design/desktop-preview.jpg
+design/mobile-design.jpg
+images/favicon-32x32.png
