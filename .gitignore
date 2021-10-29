@@ -4105,3 +4105,8 @@ design/desktop-design.jpg
 design/desktop-preview.jpg
 design/mobile-design.jpg
 images/favicon-32x32.png
+styles/scss/core/_variables.scss
+styles/scss/components/_fonts.scss
+styles/scss/core/_resets.scss
+styles/scss/layouts/_main.scss
+styles/scss/layouts/_atribution.scss
