@@ -1,12 +1,9 @@
-@font-face {
-  font-family: Rubick;
-  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@300;400;500&display=swap"); }
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Rubick; }
+  font-family: "Rubik", sans-serif;
+  cursor: default; }
 
 body {
   display: flex;
@@ -19,7 +16,6 @@ body {
   width: 1440px;
   height: 100vh;
   background-color: #0f1424;
-  border: 2px solid gold;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -27,25 +23,128 @@ body {
   .main .presentation {
     width: 300px;
     height: 600px;
-    border: 1px solid greenyellow; }
+    background-color: #1c1f4a;
+    border-radius: 15px; }
     .main .presentation .person {
       width: 100%;
       height: 70%;
       border-radius: 15px;
-      border: 1px solid green;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+      padding-left: 35px;
+      padding-top: 35px;
+      background-color: #5847eb; }
       .main .presentation .person .imgPerson {
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         border: 3px solid white; }
+      .main .presentation .person .preName {
+        margin-top: 40px;
+        color: rgba(255, 255, 255, 0.575); }
+      .main .presentation .person .name {
+        font-size: 42px;
+        color: rgba(255, 255, 255, 0.952);
+        font-weight: 300; }
+    .main .presentation .times {
+      padding: 30px 0px 0px 35px;
+      line-height: 40px;
+      color: rgba(255, 255, 255, 0.575); }
+      .main .presentation .times :hover {
+        color: white; }
   .main .cardsContainer {
     width: 1120px;
     height: 600px;
-    border: 1px solid pink; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between; }
+    .main .cardsContainer .card {
+      width: 300px;
+      height: 280px;
+      border-radius: 15px;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-content: center; }
+      .main .cardsContainer .card .title {
+        width: 100%;
+        height: 80px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        padding-left: 30px;
+        padding-top: 35px;
+        background-color: #1c1f4a; }
+      .main .cardsContainer .card .hours {
+        width: 100%;
+        height: 100px;
+        color: white;
+        font-size: 50px;
+        font-weight: 300;
+        padding-left: 30px;
+        padding-top: 30px;
+        font-weight: 300;
+        background-color: #1c1f4a; }
+      .main .cardsContainer .card .info {
+        width: 100%;
+        height: 50px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        color: rgba(255, 255, 255, 0.856);
+        font-weight: 300;
+        font-size: 16px;
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #1c1f4a; }
+
+.work {
+  background-image: url(../../../images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position-y: -7px;
+  background-position-x: 200px;
+  background-color: #ff8c66; }
+
+.play {
+  background-image: url(../../../images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position-y: -7px;
+  background-position-x: 200px;
+  background-color: #56c2e6; }
+
+.study {
+  background-image: url(../../../images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position-y: -7px;
+  background-position-x: 200px;
+  background-color: #ff5c7c; }
+
+.exercise {
+  background-image: url(../../../images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position-y: -7px;
+  background-position-x: 200px;
+  background-color: #4acf81; }
+
+.social {
+  background-image: url(../../../images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position-y: -7px;
+  background-position-x: 200px;
+  background-color: #7536d3; }
+
+.selfcare {
+  background-image: url(../../../images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position-y: -7px;
+  background-position-x: 200px;
+  background-color: #f1c65b; }
 
 .attribution {
   font-size: 11px;

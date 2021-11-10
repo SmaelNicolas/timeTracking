@@ -10,12 +10,16 @@
 
     <title>Frontend Mentor | Time tracking dashboard</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/css/styles.css">
 </head>
 
 <body>
 
-    <main class="main">
+    <main class="main" id="main">
 
         <section class="presentation">
             <div class="person">
@@ -24,43 +28,43 @@
                 <p class="name">Jeremy <br> Robson</p>
             </div>
             <div class="times">
-                <p>Daily</p>
-                <p>Weekly</p>
-                <p>Monthly</p>
+                <p id="daily">Daily</p>
+                <p id="weekly">Weekly</p>
+                <p id="monthly">Monthly</p>
             </div>
         </section>
 
         <section class="cardsContainer">
 
             <div class="card" id="work">
-                <div class="title"></div>
-                <div class="hours"></div>
-                <div class="info"></div>
+                <div class="title" id="workTitle"></div>
+                <div class="hours" id="workHours"></div>
+                <div class="info" id="workInfo"></div>
             </div>
             <div class="card" id="play">
-                <div class="title"></div>
-                <div class="hours"></div>
-                <div class="info"></div>
+                <div class="title" id="playTitle"></div>
+                <div class="hours" id="playHours"></div>
+                <div class="info" id="playInfo"></div>
             </div>
             <div class="card" id="study">
-                <div class="title"></div>
-                <div class="hours"></div>
-                <div class="info"></div>
+                <div class="title" id="studyTitle"></div>
+                <div class="hours" id="studyHours"></div>
+                <div class="info" id="studyInfo"></div>
             </div>
             <div class="card" id="exercise">
-                <div class="title"></div>
-                <div class="hours"></div>
-                <div class="info"></div>
+                <div class="title" id="exerciseTitle"></div>
+                <div class="hours" id="exerciseHours"></div>
+                <div class="info" id="exerciseInfo"></div>
             </div>
             <div class="card" id="social">
-                <div class="title"></div>
-                <div class="hours"></div>
-                <div class="info"></div>
+                <div class="title" id="socialTitle"></div>
+                <div class="hours" id="socialHours"></div>
+                <div class="info" id="socialInfo"></div>
             </div>
-            <div class="card" id="selfCare">
-                <div class="title"></div>
-                <div class="hours"></div>
-                <div class="info"></div>
+            <div class="card" id="selfcare">
+                <div class="title" id="selfcareTitle"></div>
+                <div class="hours" id="selfcareHours"></div>
+                <div class="info" id="selfcareInfo"></div>
             </div>
 
         </section>
@@ -71,6 +75,7 @@
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Your Name Here</a>.
     </div>
-</body>
+
+    <script src="script.js"></script>
 
 </html>
