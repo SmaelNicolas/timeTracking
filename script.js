@@ -49,6 +49,7 @@ const listeners = (data) => {
 };
 
 const App = (data) => {
+  createCards(data);
   for (let i = 0; i < data.length; i++) {
     let title = data[i].title.toLowerCase().split(" ").join("");
     let card = document.getElementById(title);
@@ -56,6 +57,40 @@ const App = (data) => {
     document.getElementById(title + "Title").innerHTML = data[i].title;
   }
   listeners(data);
+};
+
+const createCards = (data) => {
+  let cardsContainer = document.getElementById("cardsContainer");
+  for (let i = 0; i < data.length; i++) {
+    let title = data[i].title.toLowerCase().split(" ").join("");
+    let card = document.createElement("div");
+    let threeDots = document.createElement("div");
+    let titleDiv = document.createElement("div");
+    let hoursDiv = document.createElement("div");
+    let infoDiv = document.createElement("div");
+
+    card.classList.add("card");
+    card.setAttribute("id", `${title}`);
+
+    threeDots.classList.add("threeDots");
+    threeDots.innerHTML = "...";
+
+    titleDiv.classList.add("title");
+    titleDiv.setAttribute("id", `${title}Title`);
+
+    hoursDiv.classList.add("hours");
+    hoursDiv.setAttribute("id", `${title}Hours`);
+
+    infoDiv.classList.add("info");
+    infoDiv.setAttribute("id", `${title}Info`);
+
+    card.appendChild(threeDots);
+    card.appendChild(titleDiv);
+    card.appendChild(hoursDiv);
+    card.appendChild(infoDiv);
+
+    cardsContainer.appendChild(card);
+  }
 };
 
 initFetch();
