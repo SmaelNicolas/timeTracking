@@ -11,43 +11,6 @@ const initFetch = () => {
     .catch((error) => {});
 };
 
-const listeners = (data) => {
-  daily.addEventListener("mouseover", () => {
-    for (let i = 0; i < data.length; i++) {
-      let title = data[i].title.toLowerCase().split(" ").join("");
-
-      document.getElementById(
-        title + "Hours"
-      ).innerHTML = `${data[i].timeframes.daily.current}hrs`;
-      document.getElementById(title + "Info").innerHTML = `Yesterday - 
-        ${data[i].timeframes.daily.previous} hrs`;
-    }
-  });
-
-  weekly.addEventListener("mouseover", () => {
-    for (let i = 0; i < data.length; i++) {
-      let title = data[i].title.toLowerCase().split(" ").join("");
-
-      document.getElementById(
-        title + "Hours"
-      ).innerHTML = `${data[i].timeframes.weekly.current}hrs`;
-      document.getElementById(title + "Info").innerHTML = `Last Week - 
-        ${data[i].timeframes.weekly.previous} hrs`;
-    }
-  });
-  monthly.addEventListener("mouseover", () => {
-    for (let i = 0; i < data.length; i++) {
-      let title = data[i].title.toLowerCase().split(" ").join("");
-
-      document.getElementById(
-        title + "Hours"
-      ).innerHTML = `${data[i].timeframes.monthly.current}hrs`;
-      document.getElementById(title + "Info").innerHTML = `Last Month - 
-        ${data[i].timeframes.monthly.previous} hrs`;
-    }
-  });
-};
-
 const App = (data) => {
   createCards(data);
   for (let i = 0; i < data.length; i++) {
@@ -91,6 +54,43 @@ const createCards = (data) => {
 
     cardsContainer.appendChild(card);
   }
+};
+
+const listeners = (data) => {
+  daily.addEventListener("mouseover", () => {
+    for (let i = 0; i < data.length; i++) {
+      let title = data[i].title.toLowerCase().split(" ").join("");
+
+      document.getElementById(
+        title + "Hours"
+      ).innerHTML = `${data[i].timeframes.daily.current}hrs`;
+      document.getElementById(title + "Info").innerHTML = `Yesterday - 
+        ${data[i].timeframes.daily.previous} hrs`;
+    }
+  });
+
+  weekly.addEventListener("mouseover", () => {
+    for (let i = 0; i < data.length; i++) {
+      let title = data[i].title.toLowerCase().split(" ").join("");
+
+      document.getElementById(
+        title + "Hours"
+      ).innerHTML = `${data[i].timeframes.weekly.current}hrs`;
+      document.getElementById(title + "Info").innerHTML = `Last Week - 
+        ${data[i].timeframes.weekly.previous} hrs`;
+    }
+  });
+  monthly.addEventListener("mouseover", () => {
+    for (let i = 0; i < data.length; i++) {
+      let title = data[i].title.toLowerCase().split(" ").join("");
+
+      document.getElementById(
+        title + "Hours"
+      ).innerHTML = `${data[i].timeframes.monthly.current}hrs`;
+      document.getElementById(title + "Info").innerHTML = `Last Month - 
+        ${data[i].timeframes.monthly.previous} hrs`;
+    }
+  });
 };
 
 initFetch();
