@@ -10,7 +10,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0f1424; }
+  background-color: #0f1424;
+  color: white; }
 
 .main {
   width: 1440px;
@@ -165,32 +166,35 @@ body {
     width: 100%;
     height: auto;
     padding-top: 100px;
+    padding-bottom: 100px;
     flex-direction: column; }
     .main .presentation {
-      height: 200px;
+      height: 190px;
       margin-bottom: 25px; }
       .main .presentation .person {
-        height: 140px;
+        height: 130px;
         flex-direction: row;
         padding: 0;
         justify-content: center;
         align-items: center;
         position: relative; }
         .main .presentation .person .imgPerson {
-          width: 50px;
-          height: 50px;
+          width: 60px;
+          height: 60px;
           margin-right: 15px; }
         .main .presentation .person .preName {
           position: absolute;
           margin-top: 0;
-          top: 30px;
-          left: 95px; }
+          top: 38px;
+          left: 92px;
+          font-size: 15px; }
         .main .presentation .person .name {
-          font-size: 20px;
-          margin-right: 10px; }
+          font-size: 25px;
+          margin-right: 10px;
+          letter-spacing: 0; }
       .main .presentation .times {
         width: 100%;
-        height: 20px;
+        height: 15px;
         margin-top: 20px;
         display: flex;
         flex-direction: row;
