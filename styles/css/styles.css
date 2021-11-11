@@ -43,7 +43,7 @@ body {
         margin-top: 40px;
         color: rgba(255, 255, 255, 0.575); }
       .main .presentation .person .name {
-        padding-top: 20px;
+        padding-top: 10px;
         font-size: 48px;
         color: rgba(255, 255, 255, 0.952);
         font-weight: 300;
@@ -159,6 +159,79 @@ body {
   background-position-y: -7px;
   background-position-x: 200px;
   background-color: #f1c65b; }
+
+@media screen and (max-width: 375px) {
+  .main {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    flex-direction: column; }
+    .main .presentation {
+      height: 200px;
+      margin-bottom: 25px; }
+      .main .presentation .person {
+        height: 140px;
+        flex-direction: row;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        .main .presentation .person .imgPerson {
+          width: 50px;
+          height: 50px;
+          margin-right: 15px; }
+        .main .presentation .person .preName {
+          position: absolute;
+          margin-top: 0;
+          top: 30px;
+          left: 95px; }
+        .main .presentation .person .name {
+          font-size: 20px;
+          margin-right: 10px; }
+      .main .presentation .times {
+        width: 100%;
+        height: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-evenly;
+        align-items: center;
+        line-height: 0; }
+    .main .cardsContainer {
+      width: 300px;
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main .cardsContainer .card {
+        padding-top: 148px;
+        margin-bottom: 20px;
+        height: 120px; }
+        .main .cardsContainer .card .title {
+          padding: 0;
+          padding-left: 15px;
+          padding-top: 15px;
+          margin: 0; }
+        .main .cardsContainer .card .threeDots {
+          font-size: 20px;
+          right: 25px;
+          top: 50px; }
+        .main .cardsContainer .card .hours {
+          padding: 0;
+          padding-left: 15px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          margin: 0;
+          font-size: 25px; }
+        .main .cardsContainer .card .text {
+          height: auto;
+          position: absolute;
+          right: 25px;
+          bottom: 35px;
+          width: auto;
+          padding: 0;
+          margin: 0; } }
 
 .attribution {
   font-size: 11px;

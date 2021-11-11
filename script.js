@@ -31,6 +31,7 @@ const createCards = (data) => {
     let titleDiv = document.createElement("div");
     let hoursDiv = document.createElement("div");
     let infoDiv = document.createElement("div");
+    let p = document.createElement("p");
 
     card.classList.add("card");
     card.setAttribute("id", `${title}`);
@@ -45,8 +46,11 @@ const createCards = (data) => {
     hoursDiv.setAttribute("id", `${title}Hours`);
 
     infoDiv.classList.add("info");
-    infoDiv.setAttribute("id", `${title}Info`);
+    p.setAttribute("id", `${title}Info`);
+    p.classList.add("info");
+    p.classList.add("text");
 
+    infoDiv.appendChild(p);
     card.appendChild(threeDots);
     card.appendChild(titleDiv);
     card.appendChild(hoursDiv);
