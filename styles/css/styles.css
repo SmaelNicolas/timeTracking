@@ -14,7 +14,7 @@ body {
 
 .main {
   width: 1440px;
-  height: 100vh;
+  height: 95vh;
   background-color: #0f1424;
   display: flex;
   flex-direction: row;
