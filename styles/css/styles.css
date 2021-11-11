@@ -119,42 +119,42 @@ body {
         background-color: #1c1f4a; }
 
 .work {
-  background-image: url(../../../images/icon-work.svg);
+  background-image: url(./../../images/icon-work.svg);
   background-repeat: no-repeat;
   background-position-y: -7px;
   background-position-x: 200px;
   background-color: #ff8c66; }
 
 .play {
-  background-image: url(../../../images/icon-play.svg);
+  background-image: url(./../../images/icon-play.svg);
   background-repeat: no-repeat;
   background-position-y: -7px;
   background-position-x: 200px;
   background-color: #56c2e6; }
 
 .study {
-  background-image: url(../../../images/icon-study.svg);
+  background-image: url(./../../images/icon-study.svg);
   background-repeat: no-repeat;
   background-position-y: -7px;
   background-position-x: 200px;
   background-color: #ff5c7c; }
 
 .exercise {
-  background-image: url(../../../images/icon-exercise.svg);
+  background-image: url(./../../images/icon-exercise.svg);
   background-repeat: no-repeat;
   background-position-y: -7px;
   background-position-x: 200px;
   background-color: #4acf81; }
 
 .social {
-  background-image: url(../../../images/icon-social.svg);
+  background-image: url(./../../images/icon-social.svg);
   background-repeat: no-repeat;
   background-position-y: -7px;
   background-position-x: 200px;
   background-color: #7536d3; }
 
 .selfcare {
-  background-image: url(../../../images/icon-self-care.svg);
+  background-image: url(./../../images/icon-self-care.svg);
   background-repeat: no-repeat;
   background-position-y: -7px;
   background-position-x: 200px;
