@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/SmaelNicolas/timeTracking)
-- Live Site URL: [Add live site URL here](https://smaelnicolas.github.io/timeTracking/)
+- Solution URL: [Code](https://github.com/SmaelNicolas/timeTracking)
+- Live Site URL: [Web](https://smaelnicolas.github.io/timeTracking/)
 
 ## My process
 
@@ -36,6 +36,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.linkedin.com/in/smaeln/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/SmaelNicolas)
-- GitHub - [@yourusername](https://github.com/SmaelNicolas)
+- Website - [Smael Nicolas](https://www.linkedin.com/in/smaeln/)
+- Frontend Mentor - [@SmaelNicolas](https://www.frontendmentor.io/profile/SmaelNicolas)
+- GitHub - [@SmaelNicolas](https://github.com/SmaelNicolas)
